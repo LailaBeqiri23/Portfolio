@@ -254,6 +254,39 @@ button:hover {
   }
 }
 
+.icon a {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 0 10px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.icon a:hover {
+  color: blue;
+}
+
+container3 button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+  font-family: "IBM Plex Mono", monospace;
+}
+
 /*finish second page style*/
 
 /*start contact page style*/
@@ -297,4 +330,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+.emoji {
+  text-decoration: none;
 }
