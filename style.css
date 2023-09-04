@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-image: url("./img/tri.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-size: 1.6rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Name+der+Schriftart&display=swap");
+
+.container {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./img/tri.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+  width: 1400px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: resize 1.5s alternate infinite;
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-family: "Bungee Shade", cursive;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+@media (max-width: 813px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-17px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/*finish first page style*/
+
+/*start second page style*/
+
+/*same body style*/
+/*body {
+    font-family: "IBM Plex Mono", monospace;
+    background-image: url("./img/tri.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    font-size: 1.6rem;
+  }*/
+
+.black-box2 {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+
+  border-radius: 20px;
+  width: 100%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-box2 img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20%;
+}
+
+.black-box2 h1 {
+  margin: 0;
+  padding: 5% 0;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-17px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container1 {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container2 ul {
+  list-style: none;
+}
+
+.container3 {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container1,
+.container2,
+.container3 {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1.6rem;
+  margin: 10px;
+  box-sizing: border-box;
+  max-width: 70%;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container1,
+  .container2,
+  .container3 {
+    width: 100%;
+  }
+}
